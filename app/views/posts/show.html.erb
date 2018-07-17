@@ -1,1 +1,4 @@
-
+Title: <%= @post.title %><br>
+Content: <%= @post.content %><br>
+Comments: <%= @post.comments %><br>
+<%= @post.comments.users.uniq! %><br>
