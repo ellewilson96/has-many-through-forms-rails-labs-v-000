@@ -1,1 +1,6 @@
-<%= link_to @post.title post_path(@post) %>
+<%= @category.name %>
+
+<h2>Posts</h2>
+<% @category.posts.each do |post| %>
+  <li><%= link_to post.title, post %></li>
+  <% end %>
